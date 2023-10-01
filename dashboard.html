@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sidebar Example</title>
+</head>
+<style>
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+p{
+    mix-blend-mode:screen;
+}
+
+</style>
+<body>
+    <div class="sidebar">
+        <h2>My App</h2>
+        <ul>
+            <li><a href="#dashboard"><img src="dashboard-icon.png" alt="Dashboard" width="20" height="20"> Dashboard</a></li>
+            <li><a href="#shortcuts"><img src="shortcut-icon.png" alt="Shortcuts" width="20" height="20"> Shortcuts</a></li>
+            <li><a href="#overview"><img src="overview-icon.png" alt="Overview" width="20" height="20"> Overview</a></li>
+            <li><a href="#events"><img src="events-icon.png" alt="Events" width="20" height="20"> Events</a></li>
+            <li><a href="#about"><img src="about-icon.png" alt="About" width="20" height="20"> About</a></li>
+            <li><a href="#services"><img src="services-icon.png" alt="Services" width="20" height="20"> Services</a></li>
+            <li><a href="#contact"><img src="contact-icon.png" alt="Contact" width="20" height="20"> Contact</a></li>
+        </ul>+
+      
+    </div>
+    <div class="content">
+     <h3>Simple Sidebar</h3>
+     <p >make sure to keep all page content within the element</p>
+    </div>
+</body>
+</html>
